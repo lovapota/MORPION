@@ -1,11 +1,13 @@
+/*Importation des polices de caractere in internet*/
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+/*Titre*/
 .name {
     font-size: 5em;
     padding-bottom: 20px;
     font-family: "Lobster";
 }
-.layer {
+/* .layer {
     top: 50%;
     left: 50%;
     width: 400px;
@@ -19,9 +21,9 @@
     border: 2px solid white;
     background-color: white;
     box-shadow: 2px 2px 4px #000000;
-}
+} */
 
-.choose1,
+/* .choose1,
 .choose2 {
     width: 70px;
     height: 70px;
@@ -33,14 +35,14 @@
     display: inline-block;
     border: 2px solid lightgray;
     background-color: white;
-}
+} */
 
-.choose1:hover,
+/* .choose1:hover,
 .choose2:hover {
     border: 2px solid #3fcc64;
-}
+} */
 
-.layer2 {
+/* .layer2 {
     display: none;
     text-align: center;
     position: absolute;
@@ -56,9 +58,9 @@
     color: #6b6b6b;
     z-index: 1;
     box-shadow: 2px 2px 4px #000000;
-}
+} */
 
-.end-game {
+/* .end-game {
     display: inline-block;
     line-height: 2.5rem;
     padding: 5px;
@@ -69,13 +71,13 @@
     border: none;
     color: #4286f4;
     background-color: white;
-}
+} */
 
-.end-game:hover {
+/* .end-game:hover {
     color: #3266ba;
-}
+} */
 
-.layer3 {
+/* .layer3 {
     display: none;
     text-align: center;
     position: absolute;
@@ -91,9 +93,9 @@
     color: #6b6b6b;
     z-index: 1;
     box-shadow: 2px 2px 4px #000000;
-}
+} */
 
-.draw {
+/* .draw {
     display: inline-block;
     line-height: 2.5rem;
     padding: 5px;
@@ -104,121 +106,124 @@
     border: none;
     color: #4286f4;
     background-color: white;
-}
+} */
 
-.draw:hover {
+/* .draw:hover {
     color: #3266ba;
-}
+} */
 
+/*Jeux*/
+.container-fluid {
+    width: 332px;
+    text-align: center;
+}
+/*Score*/
 .range {
-    margin: 0 auto;
     font-size: 1.5em;
+    font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/*Player score*/
+.player-turn {
+    width: 50%;
+    display: flex;
+    border-bottom: 4px solid #4286f4;
+}
 .you-score {
     text-align: right;
 }
-
+/*CPU scrore*/
+.cpu-turn {
+    width: 50%;
+    display: flex;
+    border-left: 4px solid #b03a2e;
+    border-bottom: 4px solid #145a32;
+}
 .cpu-score {
     text-align: left;
 }
-
-.player-turn {
-    padding: 5px;
-    border-bottom: 4px solid #4286f4;
-}
-
-.cpu-turn {
-    padding: 5px;
-}
-
+/*Jeux en question*/
 .grid-container {
+    display: grid;
     margin-top: 30px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
 }
-
-.container {
-    text-align: center;
-    width: 332px;
-}
-
 .grid-item {
-    height: 100px;
     width: 100px;
-    border: 2px solid #6b6b6b;
-    padding-left: 10px;
+    height: 100px;
     font-size: 30px;
+    padding-left: 10px;
     text-align: center;
     background-color: white;
+    border: 3px solid #6b6b6b;
 }
-
 #item1,
 #item2,
 #item3 {
     border-top: none;
 }
-
 #item1,
 #item4,
 #item7 {
     border-left: none;
 }
-
 #item3,
 #item6,
 #item9 {
     border-right: none;
 }
-
 #item7,
 #item8,
 #item9 {
     border-bottom: none;
 }
-
-.reset {
-    margin-top: 30px;
-    border: none;
-    background-color: white;
-    color: #e29126;
-    font-size: 1.2em;
+/*Resultat du jeux*/
+.valiny{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
-
-.reset:hover {
-    margin-top: 30px;
-    border: none;
-    background-color: white;
+.valiny button {
+    font-size: 1.5em;
+    color: #e29126;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid green;
+    background-color: transparent;
+}
+.valiny button:hover {
     color: #af6a0f;
-    font-size: 1.2em;
+}
+.valiny h1{
+    font-size: 5rem;
 }
 /* Modal Content/Box */
 /* Overlay winning box */
 
-#overlay {
-    position: fixed;
+/* #overlay { */
+    /* position: fixed; */
     /* Sit on top of the page content */
-    display: none;
+    /* display: none; */
     /* Hidden by default */
-    width: 100%;
+    /* width: 100%; */
     /* Full width (cover the whole page) */
-    height: 100%;
+    /* height: 100%; */
     /* Full height (cover the whole page) */
-    top: 0;
+    /* top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); */
     /* Black background with opacity */
-    z-index: 2;
+    /* z-index: 2; */
     /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
+    /* cursor: pointer; */
     /* Add a pointer on hover */
 }
 
-#boite {
+/* #boite {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -232,20 +237,4 @@
     color: white;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-/*Teste des resultat*/
-
-.lova{
-    width: 15%;
-    margin: auto;
-}
-
-#myDiv{
-    width: 100%;
-    font-size: 30px;
-    border-radius: 20px;
-    border: 6px solid green;
-    padding: 10px 10px;
-    margin: 50px auto;
-}
+} */
